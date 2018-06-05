@@ -33,24 +33,24 @@ const Tooltip = ({
       {
         !isLastStep ?
           <TouchableOpacity onPress={handleStop}>
-            <Button>Skip</Button>
+            <Button>Lewati</Button>
           </TouchableOpacity>
           : null
       }
       {
         !isFirstStep ?
           <TouchableOpacity onPress={handlePrev}>
-            <Button>Previous</Button>
+            <Button>Kembali</Button>
           </TouchableOpacity>
           : null
       }
       {
         !isLastStep ?
           <TouchableOpacity onPress={handleNext}>
-            <Button>Next</Button>
+            <Button>Lanjut</Button>
           </TouchableOpacity> :
           <TouchableOpacity onPress={handleStop}>
-            <Button>Finish</Button>
+            <Button>Selesai</Button>
           </TouchableOpacity>
       }
     </View>
